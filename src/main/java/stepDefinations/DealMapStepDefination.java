@@ -93,15 +93,8 @@ WebDriver driver;
 	@Then("^User enters deals details$")
 	public void user_enters_deals_details(DataTable DealData) throws Throwable {
 		
-		//List<List<String>> DealData=dd.raw();
-		
-		//DealData.get(0).get(0)
 		
 		driver.switchTo().defaultContent();
-/*    	Thread.sleep(5000);
-*/    	
-		
-		
 		driver.switchTo().frame("mainpanel");
     	//driver.findElement(By.id("title")).sendKeys(DealData.get(0).get(0));
     	
