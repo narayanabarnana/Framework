@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
 			
-			features="F:\\CucumberFramework\\Framework\\src\\main\\java\\features\\CreateContact.feature",
+			features="F:\\CucumberFramework\\Framework\\src\\main\\java\\features\\DealsMap.feature",
 			glue={"stepDefinations"},
 			dryRun=false,
 			monochrome=true,
