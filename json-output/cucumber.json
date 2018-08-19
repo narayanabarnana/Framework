@@ -3,59 +3,101 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 63708632278,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4662998,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefination.setUP()"
+            }
+          }
+        ],
         "line": 3,
-        "name": "Create a new deal data creation",
+        "name": "This scenario is to create Contact in CRM Application",
         "description": "",
-        "id": "deals-data-creation;create-a-new-deal-data-creation",
+        "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation;this-scenario-is-to-create-contact-in-crm-application",
+        "after": [
+          {
+            "result": {
+              "duration": 1175680545,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 343389,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefination.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 128816553660,
+              "duration": 886089399,
               "status": "passed"
             },
             "line": 5,
-            "name": "User is on Login Page",
+            "name": "User is on CRMHomePage",
             "match": {
-              "location": "DealMapStepDefination.user_is_on_Login_Page()"
+              "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 35199893076,
+              "duration": 3782002914,
               "status": "passed"
             },
             "line": 6,
-            "name": "Title of the page is freeCRM",
+            "name": "User Navigates to New Contacts Page",
             "match": {
-              "location": "DealMapStepDefination.title_of_the_page_is_freeCRM()"
+              "location": "ContactCreationStepDefination.user_Navigates_to_New_Contacts_Page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 47375417285,
+              "duration": 8903938437,
               "status": "passed"
             },
             "line": 7,
-            "name": "User enter username and password",
+            "name": "User enters FirstName and LastName and Position details",
             "match": {
-              "location": "DealMapStepDefination.user_enter_username_and_password(DataTable)"
+              "location": "ContactCreationStepDefination.user_enters_FirstName_and_LastName_and_Position_details(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "Username",
-                  "Password"
+                  "FirstName",
+                  "LastName",
+                  "Position"
                 ],
                 "line": 9
               },
               {
                 "cells": [
-                  "naveenk",
-                  "test@123"
+                  "Test123",
+                  "Test456",
+                  "Manager"
                 ],
                 "line": 10
               }
@@ -64,34 +106,87 @@
           },
           {
             "result": {
-              "duration": 13030911783,
+              "duration": 146506,
               "status": "passed"
             },
+            "output": [
+              "Finished scenario"
+            ],
             "line": 12,
-            "name": "User clicks on Login button",
+            "name": "Contact Created",
             "match": {
-              "location": "DealMapStepDefination.user_clicks_on_Login_button()"
+              "location": "ContactCreationStepDefination.contact_Created()"
             },
             "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 24330465760,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
+            }
           },
           {
             "result": {
-              "duration": 15987683,
+              "duration": 369606,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User is on Home page",
             "match": {
-              "location": "DealMapStepDefination.User_is_on_Home_page()"
+              "location": "HooksStepDefination.setUP()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "This scenario is to create Deal in CRM Application",
+        "description": "",
+        "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation;this-scenario-is-to-create-deal-in-crm-application",
+        "after": [
+          {
+            "result": {
+              "duration": 840568751,
+              "status": "passed"
             },
-            "keyword": "Then "
+            "match": {
+              "location": "ContactCreationStepDefination.tearDown(Scenario)"
+            }
           },
           {
             "result": {
-              "duration": 3196457120,
+              "duration": 235951,
               "status": "passed"
             },
-            "line": 14,
+            "match": {
+              "location": "HooksStepDefination.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28430871,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is on CRMHomePage",
+            "match": {
+              "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2975617317,
+              "status": "passed"
+            },
+            "line": 17,
             "name": "User move to New Deal Page",
             "match": {
               "location": "DealMapStepDefination.user_move_to_New_Deal_Page()"
@@ -100,10 +195,10 @@
           },
           {
             "result": {
-              "duration": 43514740581,
+              "duration": 17894435605,
               "status": "passed"
             },
-            "line": 15,
+            "line": 18,
             "name": "User enters deals details",
             "match": {
               "location": "DealMapStepDefination.user_enters_deals_details(DataTable)"
@@ -116,7 +211,7 @@
                   "Probability",
                   "Commission"
                 ],
-                "line": 17
+                "line": 20
               },
               {
                 "cells": [
@@ -125,48 +220,33 @@
                   "50",
                   "10"
                 ],
-                "line": 18
-              },
-              {
-                "cells": [
-                  "test deal",
-                  "2000",
-                  "40",
-                  "20"
-                ],
-                "line": 19
-              },
-              {
-                "cells": [
-                  "test deal",
-                  "3000",
-                  "30",
-                  "30"
-                ],
-                "line": 20
+                "line": 21
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 12219479672,
+              "duration": 136738,
               "status": "passed"
             },
-            "line": 22,
-            "name": "Close the browser",
+            "output": [
+              "Finished scenario"
+            ],
+            "line": 23,
+            "name": "Deal Created Succesfully",
             "match": {
-              "location": "DealMapStepDefination.close_the_browser()"
+              "location": "DealMapStepDefination.deal_Created_Succesfully()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Deals Data creation",
+    "name": "This feature file contains scenarios for Contact creation and Deals creation",
     "description": "",
-    "id": "deals-data-creation",
+    "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation",
     "keyword": "Feature",
-    "uri": "F:/CucumberFramework/Framework/src/main/java/features/DealsMap.feature"
+    "uri": "./src/main/java/features/TestMultipleScenario.feature"
   }
 ]

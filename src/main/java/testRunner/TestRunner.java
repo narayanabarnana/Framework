@@ -1,6 +1,12 @@
 package testRunner;
 
+import java.io.File;
+
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+
+import com.vimalselvam.cucumber.listener.Reporter;
+//import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -10,12 +16,19 @@ import cucumber.api.junit.Cucumber;
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
 			
-			features="F:\\CucumberFramework\\Framework\\src\\main\\java\\features\\DealsMap.feature",
+			features="./src/main/java/features/TestMultipleScenario.feature",
 			glue={"stepDefinations"},
 			dryRun=false,
 			monochrome=true,
 			strict=true,
-			format={"pretty","html:test-output","json:json-output/cucumber.json","junit:junitxml-output/cucumber.xml"}
+			//tags={"@SmokeTest"},  //if we want to execute Smoke test only
+			//tags={"@SmokeTest , @RegressionTest"}, //OR operator :if we want to execute either SmokeTest or Regression test then we use this i.e. Comma(,) separated
+			//tags={"@SanityTest" , "@RegressionTest"}, //And Operator : Executes all tests tagged as @SanityTest AND @RegressionTest
+			//tags={"~@SanityTest" , "@RegressionTest"}, //Ignore specific test cases we use ~ special character. in this example we are ignoring  SanityTest
+			format={"pretty","html:test-output","json:json-output/cucumber.json","junit:junitxml-output/cucumber.xml"},
+			plugin={"pretty:STDOUT","html:target/cucumber-extent",
+					"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:F:\\CucumberFramework\\Framework\\target\\cucumber-extent\\ExtentReport.html"
+					}
 			
 			
 			
@@ -55,4 +68,25 @@ import cucumber.api.junit.Cucumber;
 	
 	public class TestRunner {
 	
+		
+		@AfterClass
+	    public static void reportSetup() 
+	 	{
+	        Reporter.loadXMLConfig(new File("F:\\CucumberFramework\\Framework\\src\\main\\java\\utilities\\extent-config.xml"));
+	        /*Properties p = System.getProperties();
+	        p.list(System.out);*/
+	        
+	        Reporter.setSystemInfo("User Name",System.getProperty("user.name"));
+	        Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
+	        Reporter.setSystemInfo("64 Bit", 	"Windows 10");
+	        Reporter.setSystemInfo("2.53.0", "Selenium");
+	        Reporter.setSystemInfo("3.3.9", "Maven");
+	        Reporter.setSystemInfo("1.8.0_66", "Java Version");
+	        Reporter.setTestRunnerOutput("Cucumber JUnit Test Runner");
+	 	}
+		
+		
+		
+		
+		
 }

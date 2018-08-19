@@ -21,7 +21,7 @@ public class DealCreationStepDefination {
 //	
 //	@Given("^User is on Login Page$")
 //	public void user_is_on_Login_Page() throws Throwable {
-//	    ;
+//	    
 //		System.setProperty("webdriver.chrome.driver", "E:\\Latest Selenium Drivers\\chromedriver_win32\\chromedriver.exe");
 //		driver=new ChromeDriver();
 //		driver.get("https://www.freecrm.com");
@@ -31,7 +31,7 @@ public class DealCreationStepDefination {
 //	public void title_of_the_page_is_freeCRM() throws Throwable {
 //		
 //		String title=driver.getTitle();
-//		Assert.assertEquals("Free CRM software in the cloud powers sales and customer service", title);
+//		//Assert.assertEquals("Free CRM software in the cloud powers sales and customer service", title);
 //	    
 //	}
 //	

@@ -1,44 +1,54 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F:/CucumberFramework/Framework/src/main/java/features/DealsMap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/main/java/features/TestMultipleScenario.feature");
 formatter.feature({
   "line": 1,
-  "name": "Deals Data creation",
+  "name": "This feature file contains scenarios for Contact creation and Deals creation",
   "description": "",
-  "id": "deals-data-creation",
+  "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 63708632278,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 4662998,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Create a new deal data creation",
+  "name": "This scenario is to create Contact in CRM Application",
   "description": "",
-  "id": "deals-data-creation;create-a-new-deal-data-creation",
+  "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation;this-scenario-is-to-create-contact-in-crm-application",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "User is on Login Page",
+  "name": "User is on CRMHomePage",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "Title of the page is freeCRM",
+  "name": "User Navigates to New Contacts Page",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "User enter username and password",
+  "name": "User enters FirstName and LastName and Position details",
   "rows": [
     {
       "cells": [
-        "Username",
-        "Password"
+        "FirstName",
+        "LastName",
+        "Position"
       ],
       "line": 9
     },
     {
       "cells": [
-        "naveenk",
-        "test@123"
+        "Test123",
+        "Test456",
+        "Manager"
       ],
       "line": 10
     }
@@ -47,21 +57,74 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "User clicks on Login button",
+  "name": "Contact Created",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 13,
-  "name": "User is on Home page",
-  "keyword": "Then "
+formatter.match({
+  "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
 });
-formatter.step({
+formatter.result({
+  "duration": 886089399,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactCreationStepDefination.user_Navigates_to_New_Contacts_Page()"
+});
+formatter.result({
+  "duration": 3782002914,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactCreationStepDefination.user_enters_FirstName_and_LastName_and_Position_details(DataTable)"
+});
+formatter.result({
+  "duration": 8903938437,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactCreationStepDefination.contact_Created()"
+});
+formatter.result({
+  "duration": 146506,
+  "status": "passed"
+});
+formatter.write("Finished scenario");
+formatter.after({
+  "duration": 1175680545,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 343389,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 24330465760,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 369606,
+  "status": "passed"
+});
+formatter.scenario({
   "line": 14,
+  "name": "This scenario is to create Deal in CRM Application",
+  "description": "",
+  "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation;this-scenario-is-to-create-deal-in-crm-application",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 16,
+  "name": "User is on CRMHomePage",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 17,
   "name": "User move to New Deal Page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 15,
+  "line": 18,
   "name": "User enters deals details",
   "rows": [
     {
@@ -71,7 +134,7 @@ formatter.step({
         "Probability",
         "Commission"
       ],
-      "line": 17
+      "line": 20
     },
     {
       "cells": [
@@ -80,88 +143,51 @@ formatter.step({
         "50",
         "10"
       ],
-      "line": 18
-    },
-    {
-      "cells": [
-        "test deal",
-        "2000",
-        "40",
-        "20"
-      ],
-      "line": 19
-    },
-    {
-      "cells": [
-        "test deal",
-        "3000",
-        "30",
-        "30"
-      ],
-      "line": 20
+      "line": 21
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
-  "name": "Close the browser",
+  "line": 23,
+  "name": "Deal Created Succesfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealMapStepDefination.user_is_on_Login_Page()"
+  "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
 });
 formatter.result({
-  "duration": 128816553660,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.title_of_the_page_is_freeCRM()"
-});
-formatter.result({
-  "duration": 35199893076,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.user_enter_username_and_password(DataTable)"
-});
-formatter.result({
-  "duration": 47375417285,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.user_clicks_on_Login_button()"
-});
-formatter.result({
-  "duration": 13030911783,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.User_is_on_Home_page()"
-});
-formatter.result({
-  "duration": 15987683,
+  "duration": 28430871,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_move_to_New_Deal_Page()"
 });
 formatter.result({
-  "duration": 3196457120,
+  "duration": 2975617317,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_enters_deals_details(DataTable)"
 });
 formatter.result({
-  "duration": 43514740581,
+  "duration": 17894435605,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealMapStepDefination.close_the_browser()"
+  "location": "DealMapStepDefination.deal_Created_Succesfully()"
 });
 formatter.result({
-  "duration": 12219479672,
+  "duration": 136738,
+  "status": "passed"
+});
+formatter.write("Finished scenario");
+formatter.after({
+  "duration": 840568751,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 235951,
   "status": "passed"
 });
 });
