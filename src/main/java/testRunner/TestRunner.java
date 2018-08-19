@@ -79,7 +79,7 @@ import cucumber.api.junit.Cucumber;
 	        Reporter.setSystemInfo("User Name",System.getProperty("user.name"));
 	        Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
 	        Reporter.setSystemInfo("64 Bit", 	"Windows 10");
-	        Reporter.setSystemInfo("2.53.0", "Selenium");
+	        Reporter.setSystemInfo("2.41", "Selenium");
 	        Reporter.setSystemInfo("3.3.9", "Maven");
 	        Reporter.setSystemInfo("1.8.0_66", "Java Version");
 	        Reporter.setTestRunnerOutput("Cucumber JUnit Test Runner");

@@ -6,20 +6,20 @@
         "before": [
           {
             "result": {
-              "duration": 63708632278,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 4662998,
+              "duration": 945862,
               "status": "passed"
             },
             "match": {
               "location": "HooksStepDefination.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 18923900756,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
             }
           }
         ],
@@ -30,20 +30,20 @@
         "after": [
           {
             "result": {
-              "duration": 1175680545,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ContactCreationStepDefination.tearDown(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 343389,
+              "duration": 156787,
               "status": "passed"
             },
             "match": {
               "location": "HooksStepDefination.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 769588987,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.tearDown(Scenario)"
             }
           }
         ],
@@ -52,7 +52,7 @@
         "steps": [
           {
             "result": {
-              "duration": 886089399,
+              "duration": 457111573,
               "status": "passed"
             },
             "line": 5,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 3782002914,
+              "duration": 2669749629,
               "status": "passed"
             },
             "line": 6,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 8903938437,
+              "duration": 9236247600,
               "status": "passed"
             },
             "line": 7,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 146506,
+              "duration": 117719,
               "status": "passed"
             },
             "output": [
@@ -125,20 +125,20 @@
         "before": [
           {
             "result": {
-              "duration": 24330465760,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 369606,
+              "duration": 725847,
               "status": "passed"
             },
             "match": {
               "location": "HooksStepDefination.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23005909583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
             }
           }
         ],
@@ -149,20 +149,20 @@
         "after": [
           {
             "result": {
-              "duration": 840568751,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ContactCreationStepDefination.tearDown(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 235951,
+              "duration": 87389,
               "status": "passed"
             },
             "match": {
               "location": "HooksStepDefination.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1204427047,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.tearDown(Scenario)"
             }
           }
         ],
@@ -171,7 +171,7 @@
         "steps": [
           {
             "result": {
-              "duration": 28430871,
+              "duration": 10624500,
               "status": "passed"
             },
             "line": 16,
@@ -183,7 +183,7 @@
           },
           {
             "result": {
-              "duration": 2975617317,
+              "duration": 2454532042,
               "status": "passed"
             },
             "line": 17,
@@ -195,7 +195,7 @@
           },
           {
             "result": {
-              "duration": 17894435605,
+              "duration": 17920258672,
               "status": "passed"
             },
             "line": 18,
@@ -227,7 +227,7 @@
           },
           {
             "result": {
-              "duration": 136738,
+              "duration": 77622,
               "status": "passed"
             },
             "output": [

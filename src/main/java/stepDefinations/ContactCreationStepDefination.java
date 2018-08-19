@@ -4,6 +4,7 @@ package stepDefinations;
 
 import java.util.Map;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -23,6 +24,7 @@ import cucumber.api.java.en.When;
 import junit.framework.Assert;
 import utilities.BaseClass;
 import utilities.CucumberBaseClass;
+import utilities.LoggerHelper;
 import utilities.TestBase;
 
 public class ContactCreationStepDefination extends CucumberBaseClass{
@@ -31,10 +33,12 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	public ContactCreationStepDefination(CucumberBaseClass base)
 	{
 		this.base=base;
-		//base=baseclass;
+		
 	}
-//	   WebDriver driver;
+
 	
+	//Logger log=Logger.getLogger(ContactCreationStepDefination.class);
+	Logger log=LoggerHelper.getLogger(ContactCreationStepDefination.class);
 	
 	@Before()
 	public void driverSetUp(Scenario scenario)
@@ -48,6 +52,7 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		System.setProperty("webdriver.chrome.driver", "E:\\Latest Selenium Drivers\\chromedriver_win32\\chromedriver.exe");
 		base.driver=new ChromeDriver();
 		
+		log.info("Application launching");
 		base.driver.get("https://www.freecrm.com");
 		base.driver.manage().timeouts().implicitlyWait(30, java.util.concurrent.TimeUnit.SECONDS);
 		base.driver.manage().window().maximize();

@@ -4,6 +4,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.apache.log4j.Logger;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -14,6 +15,7 @@ public class CucumberBaseClass {
 	
 	public WebDriver driver;
 	public Scenario scenario;
+	Logger log;
 	
 //	@Before()
 //	public void driverSetUp(Scenario scenario)
