@@ -14,6 +14,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import com.vimalselvam.cucumber.listener.Reporter;
+
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -45,6 +47,7 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	{
 		this.scenario=scenario;
 		System.out.println("********* Test Environment Setup *************");
+		//Reporter.addStepLog("*************** Test Environment Setup ***********");
 		System.out.println("Executing the scenario " + scenario.getName());
 		
 		System.out.println("Chrome Browser Test Environment created");
