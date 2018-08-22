@@ -6,17 +6,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.CucumberBaseClass;
 import utilities.TestBase;
 
-public class LoginPage{
+public class LoginPage extends CucumberBaseClass{
 	
 	//final WebDriver driver;
 	//Initializing the Page Objects:
-		public LoginPage(WebDriver driver)
-		{
-			//this.driver=driver;
-			PageFactory.initElements(driver, this);
-		}
+//		public LoginPage(WebDriver driver)
+//		{
+//			//this.driver=driver;
+//			PageFactory.initElements(driver, this);
+//		}
 	
 	
 	

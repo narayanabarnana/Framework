@@ -1,0 +1,252 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 91910136405,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 317687,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefination.setUP()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "This scenario is to create Contact in CRM Application",
+        "description": "",
+        "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation;this-scenario-is-to-create-contact-in-crm-application",
+        "after": [
+          {
+            "result": {
+              "duration": 747969867,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 597333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefination.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 159241562,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on CRMHomePage",
+            "match": {
+              "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12265394037,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Navigates to New Contacts Page",
+            "match": {
+              "location": "ContactCreationStepDefination.user_Navigates_to_New_Contacts_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10212934152,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters FirstName and LastName and Position details",
+            "match": {
+              "location": "ContactCreationStepDefination.user_enters_FirstName_and_LastName_and_Position_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "LastName",
+                  "Position"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Test123",
+                  "Test456",
+                  "Manager"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150104,
+              "status": "passed"
+            },
+            "output": [
+              "Finished scenario"
+            ],
+            "line": 12,
+            "name": "Contact Created",
+            "match": {
+              "location": "ContactCreationStepDefination.contact_Created()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 65252551387,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.driverSetUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 849734,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefination.setUP()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "This scenario is to create Deal in CRM Application",
+        "description": "",
+        "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation;this-scenario-is-to-create-deal-in-crm-application",
+        "after": [
+          {
+            "result": {
+              "duration": 834006317,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactCreationStepDefination.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 281188,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefination.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18027928,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is on CRMHomePage",
+            "match": {
+              "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2532861773,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User move to New Deal Page",
+            "match": {
+              "location": "DealMapStepDefination.user_move_to_New_Deal_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19667310950,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters deals details",
+            "match": {
+              "location": "DealMapStepDefination.user_enters_deals_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "Amount",
+                  "Probability",
+                  "Commission"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "test deal",
+                  "1000",
+                  "50",
+                  "10"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 192771,
+              "status": "passed"
+            },
+            "output": [
+              "Finished scenario"
+            ],
+            "line": 23,
+            "name": "Deal Created Succesfully",
+            "match": {
+              "location": "DealMapStepDefination.deal_Created_Succesfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This feature file contains scenarios for Contact creation and Deals creation",
+    "description": "",
+    "id": "this-feature-file-contains-scenarios-for-contact-creation-and-deals-creation",
+    "keyword": "Feature",
+    "uri": "./src/main/java/features/TestMultipleScenario.feature"
+  }
+]

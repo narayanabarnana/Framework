@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 
 import com.vimalselvam.cucumber.listener.Reporter;
 
@@ -24,6 +25,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
+import pages.LoginPage;
 import utilities.BaseClass;
 import utilities.CucumberBaseClass;
 import utilities.LoggerHelper;
@@ -38,7 +40,7 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		
 	}
 
-	
+	public static LoginPage loginpage;
 	//Logger log=Logger.getLogger(ContactCreationStepDefination.class);
 	Logger log=LoggerHelper.getLogger(ContactCreationStepDefination.class);
 	
@@ -57,15 +59,24 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		
 		log.info("Application launching");
 		base.driver.get("https://www.freecrm.com");
+		
+		loginpage=PageFactory.initElements(base.driver, LoginPage.class);
+		
 		base.driver.manage().timeouts().implicitlyWait(30, java.util.concurrent.TimeUnit.SECONDS);
 		base.driver.manage().window().maximize();
 		
-		base.driver.findElement(By.name("username")).sendKeys("naveenk");
-		base.driver.findElement(By.name("password")).sendKeys("test@123");
+		loginpage.txtbx_UserName.sendKeys("naveenk");
+		loginpage.txtbx_Password.sendKeys("test@123");
+		//base.driver.findElement(By.name("username")).sendKeys("naveenk");
+//		base.driver.findElement(By.name("password")).sendKeys("test@123");
 		
-		WebElement login=base.driver.findElement(By.xpath("//input[@value='Login']"));
+		WebElement login=loginpage.btn_Login;
 		JavascriptExecutor js = (JavascriptExecutor)base.driver;
 		js.executeScript("arguments[0].click();", login);
+		
+//		WebElement login=base.driver.findElement(By.xpath("//input[@value='Login']"));
+//		JavascriptExecutor js = (JavascriptExecutor)base.driver;
+//		js.executeScript("arguments[0].click();", login);
 		
 	}
 	

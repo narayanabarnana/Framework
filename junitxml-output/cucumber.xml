@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="203.602823">
+<testcase classname="This feature file contains scenarios for Contact creation and Deals creation" name="This scenario is to create Contact in CRM Application" time="115.296741">
+<system-out><![CDATA[Given User is on CRMHomePage................................................passed
+When User Navigates to New Contacts Page....................................passed
+Then User enters FirstName and LastName and Position details................passed
+Then Contact Created........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains scenarios for Contact creation and Deals creation" name="This scenario is to create Deal in CRM Application" time="88.306082">
+<system-out><![CDATA[Given User is on CRMHomePage................................................passed
+Then User move to New Deal Page.............................................passed
+Then User enters deals details..............................................passed
+Then Deal Created Succesfully...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

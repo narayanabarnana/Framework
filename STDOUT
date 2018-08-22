@@ -1,1 +1,15 @@
 Feature: This feature file contains scenarios for Contact creation and Deals creation
+Finished scenario
+
+  Scenario: This scenario is to create Contact in CRM Application # ./src/main/java/features/TestMultipleScenario.feature:3
+    Given User is on CRMHomePage                                  # ContactCreationStepDefination.user_is_on_CRMHomePage()
+    When User Navigates to New Contacts Page                      # ContactCreationStepDefination.user_Navigates_to_New_Contacts_Page()
+    Then User enters FirstName and LastName and Position details  # ContactCreationStepDefination.user_enters_FirstName_and_LastName_and_Position_details(DataTable)
+    Then Contact Created                                          # ContactCreationStepDefination.contact_Created()
+Finished scenario
+
+  Scenario: This scenario is to create Deal in CRM Application # ./src/main/java/features/TestMultipleScenario.feature:14
+    Given User is on CRMHomePage                               # ContactCreationStepDefination.user_is_on_CRMHomePage()
+    Then User move to New Deal Page                            # DealMapStepDefination.user_move_to_New_Deal_Page()
+    Then User enters deals details                             # DealMapStepDefination.user_enters_deals_details(DataTable)
+    Then Deal Created Succesfully                              # DealMapStepDefination.deal_Created_Succesfully()
