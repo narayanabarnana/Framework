@@ -25,8 +25,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
+import pages.ContactPage;
 import pages.LoginPage;
-import utilities.BaseClass;
+//import utilities.BaseClass;
 import utilities.CucumberBaseClass;
 import utilities.LoggerHelper;
 import utilities.TestBase;
@@ -41,9 +42,12 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	}
 
 	public static LoginPage loginpage;
+	public static ContactPage contactpage;
+	
 	//Logger log=Logger.getLogger(ContactCreationStepDefination.class);
 	Logger log=LoggerHelper.getLogger(ContactCreationStepDefination.class);
 	
+	@SuppressWarnings("static-access")
 	@Before()
 	public void driverSetUp(Scenario scenario)
 	{
@@ -57,15 +61,21 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		System.setProperty("webdriver.chrome.driver", "E:\\Latest Selenium Drivers\\chromedriver_win32\\chromedriver.exe");
 		base.driver=new ChromeDriver();
 		
-		log.info("Application launching");
+		log.info("Launchig the Application");
 		base.driver.get("https://www.freecrm.com");
 		
+		log.info("Initializing the PageFactory");
 		loginpage=PageFactory.initElements(base.driver, LoginPage.class);
 		
 		base.driver.manage().timeouts().implicitlyWait(30, java.util.concurrent.TimeUnit.SECONDS);
+		
+		log.info("Maximising the browser");
 		base.driver.manage().window().maximize();
 		
+		log.info("Entering the username");
 		loginpage.txtbx_UserName.sendKeys("naveenk");
+		
+		log.info("Entering the password");
 		loginpage.txtbx_Password.sendKeys("test@123");
 		//base.driver.findElement(By.name("username")).sendKeys("naveenk");
 //		base.driver.findElement(By.name("password")).sendKeys("test@123");
@@ -106,18 +116,22 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 //	
 //	
 //	
+	@SuppressWarnings("static-access")
 	@When("^User Navigates to New Contacts Page$")
 	public void user_Navigates_to_New_Contacts_Page() throws Throwable {
 		
-		
+		contactpage=PageFactory.initElements(base.driver, ContactPage.class);
 		base.driver.switchTo().frame("mainpanel");
 		Actions action=new Actions(base.driver);
-		action.moveToElement(base.driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
-		base.driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
+		action.moveToElement(contactpage.btn_Contacts).build().perform();
+		//action.moveToElement(base.driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
+		contactpage.btn_NewContact.click();
+		//base.driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
 		
 	 
 	}
 //
+	@SuppressWarnings("static-access")
 	@Then("^User enters FirstName and LastName and Position details$")
 	public void user_enters_FirstName_and_LastName_and_Position_details(DataTable ContactData) throws Throwable 
 	{
@@ -129,12 +143,17 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
     	for(Map<String,String> CData : ContactData.asMaps(String.class, String.class))
     	{
     		
-    		
-    		base.driver.findElement(By.id("first_name")).sendKeys(CData.get("FirstName"));
+    		contactpage.edit_FirstName.sendKeys(CData.get("FirstName"));
+    		//base.driver.findElement(By.id("first_name")).sendKeys(CData.get("FirstName"));
         	
-    		base.driver.findElement(By.id("surname")).sendKeys(CData.get("LastName"));
-    		base.driver.findElement(By.id("company_position")).sendKeys(CData.get("Position"));
-    		base.driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
+    		contactpage.edit_SurName.sendKeys(CData.get("LastName"));
+    		//base.driver.findElement(By.id("surname")).sendKeys(CData.get("LastName"));
+    		
+        	contactpage.edit_Position.sendKeys(CData.get("Position"));
+        	//base.driver.findElement(By.id("company_position")).sendKeys(CData.get("Position"));
+    		
+        	contactpage.btn_save.click();
+        	//base.driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
     		
     	}
 		

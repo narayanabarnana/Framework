@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
 			
-			features="./src/main/java/features/TestMultipleScenario.feature",
+			features="F:\\CucumberFramework\\Framework\\src\test\\resources\\features\\TestMultipleScenario.feature",
 			glue={"stepDefinations"},
 			dryRun=false,
 			monochrome=true,
