@@ -21,3 +21,12 @@ Then User enters deals details
 | test deal | 1000   | 50          | 10         |
 
 Then Deal Created Succesfully
+
+Scenario: This scenario is to create Case in CRM Application
+
+Given User is on CRMHomePage
+Then User Navigate to New CaseCreation Page
+And User enters Case creation details
+
+| title              | description        | version | 
+| test case creation | case description   | 01      |
