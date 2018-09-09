@@ -24,6 +24,8 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import factory.BrowserFactory;
+import factory.DataProviderFactory;
 import junit.framework.Assert;
 import pages.ContactPage;
 import pages.LoginPage;
@@ -58,11 +60,16 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		
 		System.out.println("Chrome Browser Test Environment created");
 		
-		System.setProperty("webdriver.chrome.driver", "E:\\Latest Selenium Drivers\\chromedriver_win32\\chromedriver.exe");
-		base.driver=new ChromeDriver();
+		//this will automatically opens the browser, maximize the browser
+		base.driver = BrowserFactory.getBrowser("Chrome");
+		
+		///System.setProperty("webdriver.chrome.driver", "E:\\Latest Selenium Drivers\\chromedriver_win32\\chromedriver.exe");
+		//base.driver=new ChromeDriver();
 		
 		log.info("Launchig the Application");
-		base.driver.get("https://www.freecrm.com");
+		//base.driver.get("https://www.freecrm.com");
+		//this will provide the URL from the config.properties file
+		base.driver.get(DataProviderFactory.getConfig().getApplicationurl());
 		
 		log.info("Initializing the PageFactory");
 		loginpage=PageFactory.initElements(base.driver, LoginPage.class);
