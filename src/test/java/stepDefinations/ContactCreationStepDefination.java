@@ -15,6 +15,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.vimalselvam.cucumber.listener.Reporter;
 
 import cucumber.api.DataTable;
@@ -45,6 +48,8 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 
 	public static LoginPage loginpage;
 	public static ContactPage contactpage;
+	ExtentReports extent;
+    ExtentTest test;	
 	
 	//Logger log=Logger.getLogger(ContactCreationStepDefination.class);
 	Logger log=LoggerHelper.getLogger(ContactCreationStepDefination.class);
@@ -53,11 +58,16 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	@Before()
 	public void driverSetUp(Scenario scenario)
 	{
+		
+		extent = new ExtentReports("F:\\CucumberFramework\\Framework\\target\\cucumber-extent\\ExtentReport.html", true);
+		test = extent.startTest("driverSetUp");
+        test.log(LogStatus.INFO, "startTest() method will return the Extent Test object ");
+        test.log(LogStatus.INFO, "I am in actual test method");
+        test.log(LogStatus.INFO, "We Can Write The Actual Test Logic In This Test");
+		
 		this.scenario=scenario;
 		System.out.println("********* Test Environment Setup *************");
-		//Reporter.addStepLog("*************** Test Environment Setup ***********");
 		System.out.println("Executing the scenario " + scenario.getName());
-		
 		System.out.println("Chrome Browser Test Environment created");
 		
 		//this will automatically opens the browser, maximize the browser
@@ -80,10 +90,10 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		base.driver.manage().window().maximize();
 		
 		log.info("Entering the username");
-		loginpage.txtbx_UserName.sendKeys("naveenk");
+		loginpage.txtbx_UserName.sendKeys(DataProviderFactory.getConfig().getusername());
 		
 		log.info("Entering the password");
-		loginpage.txtbx_Password.sendKeys("test@123");
+		loginpage.txtbx_Password.sendKeys(DataProviderFactory.getConfig().getpassword());
 		//base.driver.findElement(By.name("username")).sendKeys("naveenk");
 //		base.driver.findElement(By.name("password")).sendKeys("test@123");
 		
@@ -91,15 +101,13 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		JavascriptExecutor js = (JavascriptExecutor)base.driver;
 		js.executeScript("arguments[0].click();", login);
 		
-//		WebElement login=base.driver.findElement(By.xpath("//input[@value='Login']"));
-//		JavascriptExecutor js = (JavascriptExecutor)base.driver;
-//		js.executeScript("arguments[0].click();", login);
 		
 	}
 	
 	@After()
 	public void tearDown(Scenario scenario)throws NullPointerException
 	{
+		
 		scenario.write("Finished scenario");
 		if (scenario.isFailed())
 				{
@@ -109,6 +117,13 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 		System.out.println("----------------------------------------------------------------------");
 		base.driver.close();
 		base.driver.quit();
+		
+		extent.endTest(test);
+        test.log(LogStatus.INFO, "endTest() method will stop capturing information about the test log");
+        extent.flush();
+        test.log(LogStatus.INFO, "flush() method of ExtentReports wil push/write everything to the document");
+        test.log(LogStatus.INFO, "close() method will clear/close all resource of the ExtentReports object");
+        extent.close();
 	}
 	
 	@Given("^User is on CRMHomePage$")
