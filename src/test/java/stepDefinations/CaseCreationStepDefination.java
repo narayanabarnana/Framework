@@ -59,7 +59,7 @@ public class CaseCreationStepDefination extends CucumberBaseClass{
         	
     		casepage.edit_CaseDescription.sendKeys(CData.get("description"));
     		
-    		casepage.edit_version.sendKeys(CData.get("version"));
+    		//casepage.edit_version.sendKeys(CData.get("version"));
     		
     		casepage.btn_UploadFile.click();
     		
