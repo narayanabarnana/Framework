@@ -61,9 +61,9 @@ public class CaseCreationStepDefination extends CucumberBaseClass{
     		
     		//casepage.edit_version.sendKeys(CData.get("version"));
     		
-    		casepage.btn_UploadFile.click();
+    		//casepage.btn_UploadFile.click();
     		
-    		Runtime.getRuntime().exec("C:\\Users\\Narayana\\Desktop\\AutoIt Files\\CRMFileUpload.exe");
+    		//Runtime.getRuntime().exec("C:\\Users\\Narayana\\Desktop\\AutoIt Files\\CRMFileUpload.exe");
     		
     	}
 		
