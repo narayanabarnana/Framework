@@ -7,11 +7,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 17082262966,
+  "duration": 17389548851,
   "status": "passed"
 });
 formatter.before({
-  "duration": 242953,
+  "duration": 222854,
   "status": "passed"
 });
 formatter.scenario({
@@ -79,58 +79,58 @@ formatter.match({
   "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
 });
 formatter.result({
-  "duration": 138098382,
+  "duration": 240259568,
   "status": "passed"
 });
 formatter.match({
   "location": "CallCreationStepDefinition.user_Navigates_to_New_Call_Page()"
 });
 formatter.result({
-  "duration": 1812656959,
+  "duration": 2009153941,
   "status": "passed"
 });
 formatter.match({
   "location": "CallCreationStepDefinition.user_enters_the_call_details(DataTable)"
 });
 formatter.result({
-  "duration": 12618922037,
+  "duration": 13969083234,
   "status": "passed"
 });
 formatter.match({
   "location": "CallCreationStepDefinition.extract_the_Task_id()"
 });
 formatter.result({
-  "duration": 167858863,
+  "duration": 151300258,
   "status": "passed"
 });
 formatter.match({
   "location": "CallCreationStepDefinition.extract_the_Case_id()"
 });
 formatter.result({
-  "duration": 52892,
+  "duration": 34204,
   "status": "passed"
 });
 formatter.match({
   "location": "CallCreationStepDefinition.extract_the_Deal_id()"
 });
 formatter.result({
-  "duration": 192176,
+  "duration": 29267,
   "status": "passed"
 });
 formatter.match({
   "location": "CallCreationStepDefinition.click_on_Submit_button()"
 });
 formatter.result({
-  "duration": 33146,
+  "duration": 87097,
   "status": "passed"
 });
 formatter.write("Finished scenario");
 formatter.after({
-  "duration": 551588150,
+  "duration": 699912234,
   "status": "passed"
 });
 formatter.after({
-  "duration": 151272,
+  "duration": 273631,
   "status": "passed"
 });
 });
