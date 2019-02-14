@@ -119,8 +119,8 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 				}
 		System.out.println("Test Environment Destroyed ");
 		System.out.println("----------------------------------------------------------------------");
-		//base.driver.close();
-		//base.driver.quit();
+		base.driver.close();
+		base.driver.quit();
 		
 		extent.endTest(test);
         test.log(LogStatus.INFO, "endTest() method will stop capturing information about the test log");

@@ -1,5 +1,10 @@
-2019-02-13 15:02:270 INFO  ContactCreationStepDefination:80 - Launchig the Application
-2019-02-13 15:02:445 INFO  ContactCreationStepDefination:85 - Initializing the PageFactory
-2019-02-13 15:02:562 INFO  ContactCreationStepDefination:90 - Maximising the browser
-2019-02-13 15:02:591 INFO  ContactCreationStepDefination:93 - Entering the username
-2019-02-13 15:02:845 INFO  ContactCreationStepDefination:115 - This scenario is to create call in CRM Application is Failed 
+2019-02-14 12:02:750 INFO  ContactCreationStepDefination:80 - Launchig the Application
+2019-02-14 12:02:17 INFO  ContactCreationStepDefination:85 - Initializing the PageFactory
+2019-02-14 12:02:144 INFO  ContactCreationStepDefination:90 - Maximising the browser
+2019-02-14 12:02:249 INFO  ContactCreationStepDefination:93 - Entering the username
+2019-02-14 12:02:615 INFO  ContactCreationStepDefination:96 - Entering the password
+2019-02-14 12:02:671 INFO  ContactCreationStepDefination:80 - Launchig the Application
+2019-02-14 12:02:581 INFO  ContactCreationStepDefination:85 - Initializing the PageFactory
+2019-02-14 12:02:592 INFO  ContactCreationStepDefination:90 - Maximising the browser
+2019-02-14 12:02:634 INFO  ContactCreationStepDefination:93 - Entering the username
+2019-02-14 12:02:212 INFO  ContactCreationStepDefination:96 - Entering the password

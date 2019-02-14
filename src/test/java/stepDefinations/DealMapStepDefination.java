@@ -36,7 +36,7 @@ public class DealMapStepDefination extends CucumberBaseClass{
 		//base=baseclass;
 	}
 	
-	
+	/*
 	@Given("^User is on Login Page$")
 	public void user_is_on_Login_Page() throws Throwable {
 	    
@@ -84,6 +84,8 @@ public class DealMapStepDefination extends CucumberBaseClass{
 	
 	}
 	
+	
+	
 	@Then("^User is on Home page$")
 	public void User_is_on_Home_page() throws Throwable {
 		
@@ -93,6 +95,8 @@ public class DealMapStepDefination extends CucumberBaseClass{
 		
 	
 	}
+	
+	*/
 	
 	@Then("^User move to New Deal Page$")
 	public void user_move_to_New_Deal_Page() throws Throwable {
