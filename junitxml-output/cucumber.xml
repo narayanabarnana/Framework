@@ -1,15 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="82.929437">
-<testcase classname="Free CRM Contact Creation" name="New Contact Creation" time="39.118923">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="109.994539">
+<testcase classname="Deals Data creation" name="Create a new deal data creation" time="109.994539">
 <system-out><![CDATA[Given User is on CRMHomePage................................................passed
-When User Navigates to New Contacts Page....................................passed
-Then User enters "Test123" and "Test456" and "Manager"......................passed
-Then Close the browser......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM Contact Creation" name="New Contact Creation 2" time="43.810514">
-<system-out><![CDATA[Given User is on CRMHomePage................................................passed
-When User Navigates to New Contacts Page....................................passed
-Then User enters "David" and "John" and "Director"..........................passed
+Then User move to New Deal Page.............................................passed
+Then User enters deals details..............................................passed
 Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>

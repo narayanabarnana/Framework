@@ -55,6 +55,7 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	//Logger log=Logger.getLogger(ContactCreationStepDefination.class);
 	Logger log=LoggerHelper.getLogger(ContactCreationStepDefination.class);
 	
+	/*
 	@SuppressWarnings("static-access")
 	@Before()
 	public void driverSetUp(Scenario scenario) throws Exception
@@ -130,6 +131,8 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
         extent.close();
         MyScreenRecorder.stopRecording();
 	}
+	
+	*/
 	
 	@Given("^User is on CRMHomePage$")
 	public void user_is_on_CRMHomePage() throws Throwable {

@@ -1,113 +1,124 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/1024812/Downloads/Framework-master/src/test/resources/features/CreateContact.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/1024812/Downloads/Framework-master/src/test/resources/features/DealsMap.feature");
 formatter.feature({
   "line": 1,
-  "name": "Free CRM Contact Creation",
+  "name": "Deals Data creation",
   "description": "",
-  "id": "free-crm-contact-creation",
+  "id": "deals-data-creation",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "line": 4,
-  "name": "New Contact Creation",
+formatter.before({
+  "duration": 116891049,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 14153794156,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 21950192882,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 164319,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Create a new deal data creation",
   "description": "",
-  "id": "free-crm-contact-creation;new-contact-creation",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "deals-data-creation;create-a-new-deal-data-creation",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 6,
+  "comments": [
+    {
+      "line": 5,
+      "value": "#\tGiven User is on Login Page"
+    },
+    {
+      "line": 6,
+      "value": "#\tWhen Title of the page is freeCRM"
+    },
+    {
+      "line": 7,
+      "value": "#\tThen User enter username and password"
+    },
+    {
+      "line": 8,
+      "value": "#"
+    },
+    {
+      "line": 9,
+      "value": "#\t\t| Username | Password |"
+    },
+    {
+      "line": 10,
+      "value": "#\t\t| naveenk  | test@123 |"
+    },
+    {
+      "line": 11,
+      "value": "#"
+    },
+    {
+      "line": 12,
+      "value": "#\tThen User clicks on Login button"
+    }
+  ],
+  "line": 13,
   "name": "User is on CRMHomePage",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "User Navigates to New Contacts Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "User enters \"\u003cFirstName\u003e\" and \"\u003cLastName\u003e\" and \"\u003cPosition\u003e\"",
+  "line": 14,
+  "name": "User move to New Deal Page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
-  "name": "Close the browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 11,
-  "name": "",
-  "description": "",
-  "id": "free-crm-contact-creation;new-contact-creation;",
+  "line": 15,
+  "name": "User enters deals details",
   "rows": [
     {
       "cells": [
-        "FirstName",
-        "LastName",
-        "Position"
+        "title",
+        "Amount",
+        "Probability",
+        "Commission"
       ],
-      "line": 13,
-      "id": "free-crm-contact-creation;new-contact-creation;;1"
+      "line": 17
     },
     {
       "cells": [
-        "Test123",
-        "Test456",
-        "Manager"
+        "test deal1",
+        "1000",
+        "50",
+        "10"
       ],
-      "line": 14,
-      "id": "free-crm-contact-creation;new-contact-creation;;2"
+      "line": 18
     },
     {
       "cells": [
-        "David",
-        "John",
-        "Director"
+        "test deal2",
+        "2000",
+        "40",
+        "20"
       ],
-      "line": 15,
-      "id": "free-crm-contact-creation;new-contact-creation;;3"
+      "line": 19
+    },
+    {
+      "cells": [
+        "test deal3",
+        "3000",
+        "30",
+        "30"
+      ],
+      "line": 20
     }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 23967917515,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 406567,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 14,
-  "name": "New Contact Creation",
-  "description": "",
-  "id": "free-crm-contact-creation;new-contact-creation;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 6,
-  "name": "User is on CRMHomePage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "User Navigates to New Contacts Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "User enters \"Test123\" and \"Test456\" and \"Manager\"",
-  "matchedColumns": [
-    0,
-    1,
-    2
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 22,
   "name": "Close the browser",
   "keyword": "Then "
 });
@@ -115,143 +126,37 @@ formatter.match({
   "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
 });
 formatter.result({
-  "duration": 249304992,
+  "duration": 147303540,
   "status": "passed"
 });
 formatter.match({
-  "location": "ContactCreationStepDefination.user_Navigates_to_New_Contacts_Page()"
+  "location": "DealMapStepDefination.user_move_to_New_Deal_Page()"
 });
 formatter.result({
-  "duration": 3391908503,
+  "duration": 20246795771,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Test123",
-      "offset": 13
-    },
-    {
-      "val": "Test456",
-      "offset": 27
-    },
-    {
-      "val": "Manager",
-      "offset": 41
-    }
-  ],
-  "location": "CreateContactStepDefination.user_enters_and_and(String,String,String)"
+  "location": "DealMapStepDefination.user_enters_deals_details(DataTable)"
 });
 formatter.result({
-  "duration": 9140504383,
+  "duration": 51437923580,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 124121,
+  "duration": 31735,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 81102,
   "status": "passed"
 });
 formatter.write("Finished scenario");
 formatter.after({
-  "duration": 2368627334,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 129763,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 22089059359,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 140342,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 15,
-  "name": "New Contact Creation",
-  "description": "",
-  "id": "free-crm-contact-creation;new-contact-creation;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 6,
-  "name": "User is on CRMHomePage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "User Navigates to New Contacts Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "User enters \"David\" and \"John\" and \"Director\"",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "Close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
-});
-formatter.result({
-  "duration": 26450489,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ContactCreationStepDefination.user_Navigates_to_New_Contacts_Page()"
-});
-formatter.result({
-  "duration": 9831102915,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "David",
-      "offset": 13
-    },
-    {
-      "val": "John",
-      "offset": 25
-    },
-    {
-      "val": "Director",
-      "offset": 36
-    }
-  ],
-  "location": "CreateContactStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 8943799587,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.close_the_browser()"
-});
-formatter.result({
-  "duration": 98380,
-  "status": "passed"
-});
-formatter.write("Finished scenario");
-formatter.after({
-  "duration": 2919806484,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 56772,
+  "duration": 1941360537,
   "status": "passed"
 });
 });

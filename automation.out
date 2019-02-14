@@ -1,10 +1,5 @@
-2019-02-14 12:02:750 INFO  ContactCreationStepDefination:80 - Launchig the Application
-2019-02-14 12:02:17 INFO  ContactCreationStepDefination:85 - Initializing the PageFactory
-2019-02-14 12:02:144 INFO  ContactCreationStepDefination:90 - Maximising the browser
-2019-02-14 12:02:249 INFO  ContactCreationStepDefination:93 - Entering the username
-2019-02-14 12:02:615 INFO  ContactCreationStepDefination:96 - Entering the password
-2019-02-14 12:02:671 INFO  ContactCreationStepDefination:80 - Launchig the Application
-2019-02-14 12:02:581 INFO  ContactCreationStepDefination:85 - Initializing the PageFactory
-2019-02-14 12:02:592 INFO  ContactCreationStepDefination:90 - Maximising the browser
-2019-02-14 12:02:634 INFO  ContactCreationStepDefination:93 - Entering the username
-2019-02-14 12:02:212 INFO  ContactCreationStepDefination:96 - Entering the password
+2019-02-14 14:02:382 INFO  HooksOrder:63 - Launchig the Application
+2019-02-14 14:02:143 INFO  HooksOrder:68 - Initializing the PageFactory
+2019-02-14 14:02:228 INFO  HooksOrder:73 - Maximising the browser
+2019-02-14 14:02:248 INFO  HooksOrder:83 - Entering the username
+2019-02-14 14:02:490 INFO  HooksOrder:86 - Entering the password

@@ -17,7 +17,7 @@ import cucumber.api.junit.Cucumber;
 	@CucumberOptions(
 			
 			//features="C:\\Users\\1024812\\Downloads\\Framework-master\\src\\test\\resources\\features\\TestMultipleScenario.feature",
-			features="C:\\Users\\1024812\\Downloads\\Framework-master\\src\\test\\resources\\features\\CreateContact.feature",
+			features="C:\\Users\\1024812\\Downloads\\Framework-master\\src\\test\\resources\\features\\DealsMap.feature",
 //			features="C:\\Users\\1024812\\Downloads\\Framework-master\\src\\test\\resources\\features",
 			glue={"stepDefinations"},
 			dryRun=false,
