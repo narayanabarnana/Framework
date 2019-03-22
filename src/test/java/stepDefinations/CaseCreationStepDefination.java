@@ -3,7 +3,10 @@ package stepDefinations;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+<<<<<<< HEAD
 import org.junit.Assert;
+=======
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
@@ -60,8 +63,11 @@ public class CaseCreationStepDefination extends CucumberBaseClass{
         	
     		casepage.edit_CaseDescription.sendKeys(CData.get("description"));
     		
+<<<<<<< HEAD
     		//Assert.assertTrue(false);
     		
+=======
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
     		//casepage.edit_version.sendKeys(CData.get("version"));
     		
     		//casepage.btn_UploadFile.click();

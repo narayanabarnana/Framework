@@ -8,8 +8,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 public class BrowserFactory {
 	
 	
@@ -36,6 +39,7 @@ public class BrowserFactory {
 			//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			//System.setProperty("webdriver.chrome.driver", DataProviderFactory.getConfig().getChromePath());
 			//driver = new ChromeDriver(capabilities);
+<<<<<<< HEAD
 			
 			System.setProperty("webdriver.chrome.driver", DataProviderFactory.getConfig().getChromePath());
 			driver=new ChromeDriver();
@@ -44,6 +48,10 @@ public class BrowserFactory {
 //			driver=new ChromeDriver();
 			
 			
+=======
+			System.setProperty("webdriver.chrome.driver", DataProviderFactory.getConfig().getChromePath());
+			driver=new ChromeDriver();
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 		}
 		
 		else if(browserName.equalsIgnoreCase("IE"))

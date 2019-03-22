@@ -16,9 +16,13 @@ import cucumber.api.junit.Cucumber;
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
 			
+<<<<<<< HEAD
 			//features="C:\\Users\\1024812\\Downloads\\Framework-master\\src\\test\\resources\\features\\TestMultipleScenario.feature",
 			features="C:\\Users\\1024812\\Downloads\\Framework-master\\src\\test\\resources\\features\\DealsMap.feature",
 //			features="C:\\Users\\1024812\\Downloads\\Framework-master\\src\\test\\resources\\features",
+=======
+			features="F:\\CucumberFramework\\Framework\\src\\test\\resources\\features\\TestMultipleScenario.feature",
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 			glue={"stepDefinations"},
 			dryRun=false,
 			monochrome=true,
@@ -29,7 +33,11 @@ import cucumber.api.junit.Cucumber;
 			//tags={"~@SanityTest" , "@RegressionTest"}, //Ignore specific test cases we use ~ special character. in this example we are ignoring  SanityTest
 			format={"pretty","html:test-output","json:json-output/cucumber.json","junit:junitxml-output/cucumber.xml"},
 			plugin={"pretty:STDOUT","html:target/cucumber-extent",
+<<<<<<< HEAD
 					"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\1024812\\Downloads\\Framework-master\\target\\cucumber-extent\\ExtentReport.html"
+=======
+					"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:F:\\CucumberFramework\\Framework\\target\\cucumber-extent\\ExtentReport.html"
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 					}
 			
 			
@@ -74,7 +82,11 @@ import cucumber.api.junit.Cucumber;
 		@AfterClass
 	    public static void reportSetup() 
 	 	{
+<<<<<<< HEAD
 	        Reporter.loadXMLConfig(new File("C:\\Users\\1024812\\Downloads\\Framework-master\\src\\main\\java\\utilities\\extent-config.xml"));
+=======
+	        Reporter.loadXMLConfig(new File("F:\\CucumberFramework\\Framework\\src\\main\\java\\utilities\\extent-config.xml"));
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 	        /*Properties p = System.getProperties();
 	        p.list(System.out);*/
 	        

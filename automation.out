@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 2019-03-22 13:03:130 INFO  HooksOrder:63 - Launchig the Application
 2019-03-22 13:03:922 INFO  HooksOrder:68 - Initializing the PageFactory
 2019-03-22 13:03:982 INFO  HooksOrder:73 - Maximising the browser
 2019-03-22 13:03:74 INFO  HooksOrder:83 - Entering the username
 2019-03-22 13:03:949 INFO  HooksOrder:86 - Entering the password
+=======
+2018-12-05 20:12:960 INFO  ContactCreationStepDefination:79 - Launchig the Application
+2018-12-05 20:12:753 INFO  ContactCreationStepDefination:84 - Initializing the PageFactory
+2018-12-05 20:12:251 INFO  ContactCreationStepDefination:89 - Maximising the browser
+2018-12-05 20:12:264 INFO  ContactCreationStepDefination:92 - Entering the username
+2018-12-05 20:12:88 INFO  ContactCreationStepDefination:95 - Entering the password
+2018-12-05 20:12:496 INFO  ContactCreationStepDefination:79 - Launchig the Application
+2018-12-05 20:12:864 INFO  ContactCreationStepDefination:84 - Initializing the PageFactory
+2018-12-05 20:12:874 INFO  ContactCreationStepDefination:89 - Maximising the browser
+2018-12-05 20:12:882 INFO  ContactCreationStepDefination:92 - Entering the username
+2018-12-05 20:12:79 INFO  ContactCreationStepDefination:95 - Entering the password
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965

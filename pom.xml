@@ -128,7 +128,23 @@
     <version>1.2.17</version>
 </dependency>
 
+<<<<<<< HEAD
 
+=======
+<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+<dependency>
+    <groupId>org.apache.pdfbox</groupId>
+    <artifactId>pdfbox</artifactId>
+    <version>2.0.8</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/fontbox -->
+<dependency>
+    <groupId>org.apache.pdfbox</groupId>
+    <artifactId>fontbox</artifactId>
+    <version>2.0.8</version>
+</dependency>
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 
 <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
 <dependency>
@@ -144,6 +160,7 @@
     <scope>test</scope>
 </dependency>
 
+<<<<<<< HEAD
 <!-- https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder -->
 <dependency>
     <groupId>com.github.stephenc.monte</groupId>
@@ -153,6 +170,8 @@
 
 
 
+=======
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
 </dependencies>
 
 
@@ -183,6 +202,7 @@
 </configuration>
 
 </plugin>
+<<<<<<< HEAD
 
 
 <plugin>
@@ -211,6 +231,8 @@
 
 
 
+=======
+>>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
  
 </plugins>
  
