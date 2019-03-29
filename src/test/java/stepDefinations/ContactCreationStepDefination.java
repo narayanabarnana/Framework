@@ -35,10 +35,9 @@ import pages.LoginPage;
 //import utilities.BaseClass;
 import utilities.CucumberBaseClass;
 import utilities.LoggerHelper;
-<<<<<<< HEAD
+
 import utilities.MyScreenRecorder;
-=======
->>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
+
 import utilities.TestBase;
 
 public class ContactCreationStepDefination extends CucumberBaseClass{
@@ -58,7 +57,6 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	//Logger log=Logger.getLogger(ContactCreationStepDefination.class);
 	Logger log=LoggerHelper.getLogger(ContactCreationStepDefination.class);
 	
-<<<<<<< HEAD
 	/*
 	@SuppressWarnings("static-access")
 	@Before()
@@ -119,11 +117,11 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	}
 	
 	@After()
-<<<<<<< HEAD
+
 	public void tearDown(Scenario scenario)throws Exception
-=======
+
 	public void tearDown(Scenario scenario)throws NullPointerException
->>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
+
 	{
 		
 		scenario.write("Finished scenario");
@@ -155,10 +153,10 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	
 	*/
 	
-=======
-	}
+
+//	}
 	
->>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
+
 	@Given("^User is on CRMHomePage$")
 	public void user_is_on_CRMHomePage() throws Throwable {
 	    
