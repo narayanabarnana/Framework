@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="113.729873">
-<testcase classname="Deals Data creation" name="Create a new deal data creation" time="113.729873">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="94.747072">
+<testcase classname="Deals Data creation" name="Create a new deal data creation" time="94.747072">
 <system-out><![CDATA[Given User is on CRMHomePage................................................passed
 Then User move to New Deal Page.............................................passed
 Then User enters deals details..............................................passed
