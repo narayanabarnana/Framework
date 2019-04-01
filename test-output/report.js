@@ -7,15 +7,15 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 306413718,
+  "duration": 520432224,
   "status": "passed"
 });
 formatter.before({
-  "duration": 16837981239,
+  "duration": 18928010389,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8642604191,
+  "duration": 12880427527,
   "status": "passed"
 });
 formatter.scenario({
@@ -122,33 +122,33 @@ formatter.match({
   "location": "ContactCreationStepDefination.user_is_on_CRMHomePage()"
 });
 formatter.result({
-  "duration": 972576259,
+  "duration": 575979650,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_move_to_New_Deal_Page()"
 });
 formatter.result({
-  "duration": 3086361933,
+  "duration": 4354412669,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_enters_deals_details(DataTable)"
 });
 formatter.result({
-  "duration": 58837699145,
+  "duration": 60053596395,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 39846,
+  "duration": 48308,
   "status": "passed"
 });
 formatter.write("Finished scenario");
 formatter.after({
-  "duration": 5173956614,
+  "duration": 16416965539,
   "status": "passed"
 });
 });
