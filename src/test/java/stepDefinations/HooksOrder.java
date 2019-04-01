@@ -23,12 +23,6 @@ import utilities.MyScreenRecorder;
 
 public class HooksOrder extends CucumberBaseClass{
 	
-	ExtentReports extent;
-    ExtentTest test;
-    
-    public static LoginPage loginpage;
-    
-    Logger log=LoggerHelper.getLogger(HooksOrder.class);
 	
 	private CucumberBaseClass base;
 	public HooksOrder(CucumberBaseClass base)
@@ -36,6 +30,15 @@ public class HooksOrder extends CucumberBaseClass{
 		this.base=base;
 		
 	}
+	
+	ExtentReports extent;
+    ExtentTest test;
+    
+    public static LoginPage loginpage;
+    
+    Logger log=LoggerHelper.getLogger(HooksOrder.class);
+	
+	
 	
 	@Before(order=0)
 	public void StartRecording(Scenario scenario) throws Exception {

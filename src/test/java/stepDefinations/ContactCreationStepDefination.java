@@ -64,14 +64,7 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 	{
 		MyScreenRecorder.startRecording(scenario.getName());
 		extent = new ExtentReports("C:\\Users\\1024812\\Downloads\\Framework-master\\target\\cucumber-extent\\ExtentReport.html", true);
-=======
-	@SuppressWarnings("static-access")
-	@Before()
-	public void driverSetUp(Scenario scenario)
-	{
-		
-		extent = new ExtentReports("F:\\CucumberFramework\\Framework\\target\\cucumber-extent\\ExtentReport.html", true);
->>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
+
 		test = extent.startTest("driverSetUp");
         test.log(LogStatus.INFO, "startTest() method will return the Extent Test object ");
         test.log(LogStatus.INFO, "I am in actual test method");
@@ -120,21 +113,17 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
 
 	public void tearDown(Scenario scenario)throws Exception
 
-	public void tearDown(Scenario scenario)throws NullPointerException
-
-	{
+	
 		
 		scenario.write("Finished scenario");
 		if (scenario.isFailed())
 				{
-<<<<<<< HEAD
+
 					log.info(scenario.getName() + " is Failed ");
 					final byte[] screenshot = ((TakesScreenshot)base.driver).getScreenshotAs(OutputType.BYTES);
 					scenario.embed(screenshot, "image/png");
-					//scenario.embed(((TakesScreenshot)base.driver).getScreenshotAs(OutputType.BYTES),"image/png");
-=======
 					scenario.embed(((TakesScreenshot)base.driver).getScreenshotAs(OutputType.BYTES),"image/png");
->>>>>>> 4277175c835943d4ca9bbec4ebe3875ca196d965
+
 				}
 		System.out.println("Test Environment Destroyed ");
 		System.out.println("----------------------------------------------------------------------");
@@ -147,7 +136,7 @@ public class ContactCreationStepDefination extends CucumberBaseClass{
         test.log(LogStatus.INFO, "flush() method of ExtentReports wil push/write everything to the document");
         test.log(LogStatus.INFO, "close() method will clear/close all resource of the ExtentReports object");
         extent.close();
-<<<<<<< HEAD
+
         MyScreenRecorder.stopRecording();
 	}
 	

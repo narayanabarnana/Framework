@@ -45,8 +45,8 @@ public class BrowserFactory {
 			
 			
 
-			System.setProperty("webdriver.chrome.driver", DataProviderFactory.getConfig().getChromePath());
-			driver=new ChromeDriver();
+//			System.setProperty("webdriver.chrome.driver", DataProviderFactory.getConfig().getChromePath());
+//			driver=new ChromeDriver();
 
 		}
 		
